@@ -42,7 +42,7 @@ header{
     transition: all ease .50s;
 }
 .logo img{
-    width: 100%;
+    width: 40%;
     height: auto;
 }
 .navlist{
@@ -70,7 +70,7 @@ section{
 }
 .home{
     position: relative;
-    min-height: 100vh;
+    min-height: 110vh;
     width: 100%;
     background: url(bg.pf4.jpg);
     background-size: cover;
@@ -252,7 +252,7 @@ span{
     font-family: 'Dosis', sans-serif;
     font-size: var(--h2-font);
     font-weight: 800;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 .right-contact a{
     display: inline-block;
@@ -435,10 +435,9 @@ span{
 }
 
 .container {
-    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 55rem;
   }
   
   form {
@@ -448,6 +447,7 @@ span{
   
   label {
     margin-bottom: 8px;
+    color: black;
   }
   
   input,
@@ -456,11 +456,12 @@ span{
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px;
   }
   
   button {
     padding: 10px;
-    background-color: #4caf50;
+    background-color: #e9204f;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -469,5 +470,33 @@ span{
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #e9204f;
+  }
+
+  .portfolio{
+    background-color: rgb(252, 144, 162);
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .project-image {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #e9204f;
+    margin-top: 4rem;
+  }
+  
+  img {
+    display: hidden;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-image:hover img {
+    transform: scale(1.1);
   }
